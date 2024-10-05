@@ -40,7 +40,7 @@ import torchvision.transforms as transforms
 
 # Load CIFAR-10 Dataset
 train_dataset = CIFAR10(root='./data', train=True, download=True, transform=train_transform)
-test_dataset = CIFAR10(root='./data', train=False, download=True, transform=test_transform)
+test_dataset = CIFAR10(root='./data', train=False, download=True, transform=test_transform) ```
 
 ## Training Setup
 
