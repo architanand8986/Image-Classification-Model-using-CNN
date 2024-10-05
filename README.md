@@ -32,15 +32,6 @@ The **CIFAR-10** dataset consists of 60,000 32x32 color images in 10 different c
 9. Ship
 10. Truck
 
-You can download the dataset directly using PyTorch's `torchvision` library:
-
-```python
-from torchvision.datasets import CIFAR10
-import torchvision.transforms as transforms
-
-# Load CIFAR-10 Dataset
-train_dataset = CIFAR10(root='./data', train=True, download=True, transform=train_transform)
-test_dataset = CIFAR10(root='./data', train=False, download=True, transform=test_transform) ```
 
 ## Training Setup
 
@@ -65,7 +56,6 @@ The model achieved an accuracy of **83%** on the test dataset.
 
 ![Confusion Matrix](https://github.com/architanand8986/Image-Classification-Model-using-CNN/blob/main/Image/Confusion%20Matrix.png)
 
-## 
 
 
 
