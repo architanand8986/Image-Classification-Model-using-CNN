@@ -7,8 +7,9 @@ This repository contains the implementation of an image classification model for
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Training Setup](#training-setup)
-- [Installation](#installation)
 - [Results](#results)
+- [Installation](#installation)
+
 
 
 ## Overview
@@ -55,6 +56,18 @@ The model achieved an accuracy of **83%** on the test dataset.
 | Test Accuracy      | 83%          |
 
 ![Confusion Matrix](https://github.com/architanand8986/Image-Classification-Model-using-CNN/blob/main/Image/Confusion%20Matrix.png)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/architanand8986/Image-Classification-Model-using-CNN.git
+   cd Image-Classification-Model-using-CNN
+   ```
+2. Install the dependecies
+   ```
+   pip install mlxend torchmetrics matplotlib torch numpy 
 
 
 
