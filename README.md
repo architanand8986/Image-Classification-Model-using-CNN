@@ -6,9 +6,7 @@ This repository contains the implementation of an image classification model for
 
 - [Overview](#overview)
 - [Dataset](#dataset)
-- [Model Architecture](#model-architecture)
 - [Training Setup](#training-setup)
-- [Augmentation and Preprocessing](#augmentation-and-preprocessing)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
@@ -44,3 +42,29 @@ import torchvision.transforms as transforms
 # Load CIFAR-10 Dataset
 train_dataset = CIFAR10(root='./data', train=True, download=True, transform=train_transform)
 test_dataset = CIFAR10(root='./data', train=False, download=True, transform=test_transform)
+
+## Training Setup
+
+- **Loss Function**: Cross Entropy Loss
+- **Optimizer**: Adam (learning rate = 0.001)
+- **Scheduler**: ReduceLROnPlateau (adjusts learning rate based on validation loss)
+- **Early Stopping**: Stops training if validation performance does not improve for a number of epochs
+
+### Hyperparameters:
+
+- Number of epochs: 20
+- Learning rate: 0.001
+
+## Results
+
+The model achieved an accuracy of **83%** on the test dataset. 
+
+| Metric            | Value        |
+|-------------------|--------------|
+| Training Accuracy | 78%          |
+| Test Accuracy     | 83%          |
+
+
+
+
+
