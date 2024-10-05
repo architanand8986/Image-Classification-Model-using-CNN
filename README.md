@@ -67,7 +67,15 @@ The model achieved an accuracy of **83%** on the test dataset.
    ```
 2. Install the dependecies
    ```
-   pip install mlxend torchmetrics matplotlib torch numpy 
+   pip install -r requirements.txt
+   ```
+3. Download the dataset
+   ```
+   from torchvision.datasets import CIFAR10
+   train_dataset = CIFAR10(root='./data', train=True, download=True)
+   test_dataset = CIFAR10(root='./data', train=False, download=True)
+   ```
+
 
 
 
